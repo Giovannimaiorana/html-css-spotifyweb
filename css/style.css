@@ -19,8 +19,17 @@
 }
 .sidebar .information{
     width: 100%;
-    height: 200px;
+    height: 350px;
     background-color: aqua;
+}
+.sidebar .information .sidebar-icon{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.sidebar .information .sidebar-icon .logo-text a{
+    color: white;
+    text-decoration: none;
 }
 .sidebar .login{
     width: 100%;
@@ -30,7 +39,6 @@
 .content{
     width: calc(100% - 50px);
     background-color: burlywood;
-    overflow-y: scroll;
 }
 #cta{
     position: fixed;
@@ -73,6 +81,10 @@
     background-color: rgb(40, 40, 40);
     height: 100px;
     width: 100%;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
 }
 
 
@@ -102,6 +114,9 @@
 }
 .radio{
     border-radius: 100%;
+}
+.overflw{
+    overflow-y: scroll;
 }
 
 
