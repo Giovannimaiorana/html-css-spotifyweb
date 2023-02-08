@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*CSS CODE media queryxs*/
+/*debug*/
+
+/*CSS CODE */
+/* main code*/
 .container-main{
     height: calc(100vh - 100px);
 }
@@ -19,12 +22,13 @@
     position: fixed;
     left: 50px;
     height: 100px;
-    top: 0 px;
+    top: 0;
     z-index: 999;
     width: calc(100vw - 50px);
     background-color:red;
 
 }
+/* footer code */
 .container-footer{
     background-color: rgb(40, 40, 40);
     height: 100px;
@@ -44,6 +48,9 @@
 .wrap{
     flex-wrap: wrap;
 }
+.jc-between{
+    justify-content: space-between;
+}
 
 
 
@@ -57,14 +64,12 @@
     width: 200px;
    } 
    .content{
-    width: calc(100% -200px);
+    width: calc(100% - 200px);
    }
    #cta{
-   width: calc(100vw -200px);
+   width: calc(100vw - 200px);
    left: 200px;
    }
-
-
 }
 
 
