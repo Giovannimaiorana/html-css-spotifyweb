@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 /*debug*/
 
@@ -20,7 +21,7 @@
 .sidebar .information{
     width: 100%;
     height: 350px;
-    background-color: aqua;
+    
 }
 .sidebar .information .sidebar-icon{
     margin-top: 10px;
@@ -34,14 +35,15 @@
 .sidebar .login{
     width: 100%;
     height: 100px;
-    background-color: aqua; 
+    background-color: azure;
+    z-index: 20;
 }
 .sidebar .information .mobile{
     display: none;
 }
 .content{
     width: calc(100% - 50px);
-    background-color: burlywood;
+    background-color: rgb(20, 25, 34);
 }
 #cta{
     position: fixed;
@@ -50,7 +52,21 @@
     top: 0;
     z-index: 999;
     width: calc(100vw - 50px);
-    background-color:red;
+    background-color:rgba(0,0,0,0.5);
+}
+#cta .upgrade a{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    
+}
+#cta .upgrade{
+    position: absolute;
+    right: 0;
+    top:30px;
 }
 .navigation{
     margin-top: 110px;
@@ -143,6 +159,9 @@
    .sidebar .information .mobile{
     display: block;
    }
+   .sidebar .login{
+
+}
 }
 
 
@@ -164,6 +183,3 @@
 }
 
 
-@media screen and (min-width: 1200px) {
-    
-}
