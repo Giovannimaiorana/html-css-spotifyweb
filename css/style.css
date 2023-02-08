@@ -3,8 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*CSS CODE*/
+/*CSS CODE media queryxs*/
+main{
+    height: calc(100vh - 100px);
+}
+.sidebar{
+    width: 50px;
+    background-color: black;
+}
 
+.main-content{
+    width: calc(100% -50px);
+}
+.container-footer{
+    background-color: rgb(40, 40, 40);
+    height: 100px;
+}
 
 
 
@@ -13,7 +27,12 @@
 
 /*COMMON RULES*/
 
-
+.flex{
+    display: flex;
+}
+.wrap{
+    flex-wrap: wrap;
+}
 
 
 
@@ -22,3 +41,28 @@
 
 
 /*MEDIA QUERY*/
+@media screen and (min-width: 576px) {
+   .sidebar{
+    width: 200px;
+   } 
+   .main-content{
+    width: calc(100% -200px);
+}
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    
+}
+
+
+@media screen and (min-width: 992px) {
+    
+}
+
+
+@media screen and (min-width: 1200px) {
+    
+}
