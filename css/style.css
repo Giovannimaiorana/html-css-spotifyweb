@@ -36,6 +36,9 @@
     height: 100px;
     background-color: aqua; 
 }
+.sidebar .information .mobile{
+    display: none;
+}
 .content{
     width: calc(100% - 50px);
     background-color: burlywood;
@@ -137,6 +140,9 @@
    width: calc(100vw - 200px);
    left: 200px;
    }
+   .sidebar .information .mobile{
+    display: block;
+   }
 }
 
 
@@ -146,6 +152,7 @@
         width: calc((100% / 4 ) - 20px);
         margin:10px 
     }
+   
 }
 
 
