@@ -4,20 +4,31 @@
     box-sizing: border-box;
 }
 /*CSS CODE media queryxs*/
-main{
+.container-main{
     height: calc(100vh - 100px);
 }
 .sidebar{
     width: 50px;
     background-color: black;
 }
+.content{
+    width: calc(100% - 50px);
+    background-color: burlywood;
+}
+#cta{
+    position: fixed;
+    left: 50px;
+    height: 100px;
+    top: 0 px;
+    z-index: 999;
+    width: calc(100vw - 50px);
+    background-color:red;
 
-.main-content{
-    width: calc(100% -50px);
 }
 .container-footer{
     background-color: rgb(40, 40, 40);
     height: 100px;
+    width: 100%;
 }
 
 
@@ -45,9 +56,14 @@ main{
    .sidebar{
     width: 200px;
    } 
-   .main-content{
+   .content{
     width: calc(100% -200px);
-}
+   }
+   #cta{
+   width: calc(100vw -200px);
+   left: 200px;
+   }
+
 
 }
 
