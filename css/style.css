@@ -39,6 +39,12 @@
 .play-container h5{
     margin-left: 10px;
 }
+.play-container{
+    overflow-y: hidden;
+}
+.play-container .playlistname{
+    overflow-y: scroll;
+}
 
 .information .information-container .icon-text{
     line-height: 40px;
@@ -105,44 +111,26 @@
     margin-left: 10px;
 }
 /*sidebar bottom*/
-.install{
-    width: 80%;
-    margin: auto;
-    border-bottom: 1px solid white;
-}
-.login .install span a img{
-    width: 15px;
-    vertical-align: middle;
-}
-.login .install span a {
-    text-decoration: none;
-    color: rgb(123, 126, 130);
-    font-size: 12px;
-    vertical-align: middle;
-}
-.user{
-    width: 80%;
-    margin: auto;
+.login{
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
 }
-.login .user span a img{
-    width: 25px;
-    height: 25px;
-    margin: auto;
+.login .install span img {
+    width: 20px;
+    margin-left: 10px;
+}
+.login .install .hide  {
+    display: none;
+}
+.login .user .hide{
+    display: none;
+}
+.login .user span img {
+    width: 20px;
+    margin-left: 12px;
     background-color: rgb(123, 126, 130);
-    object-fit: cover;
-    border-radius: 60%;
-    margin-top: 10px;
-    margin-right: 10px;
-    vertical-align: bottom;
-   
-}
-.login .user span a {
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-
+    border-radius: 100px;
+    margin-top: 20px;
 }
 
 /*** finesidebar*****/
@@ -365,6 +353,50 @@
     display: flex;
     flex-direction: column;
 }
+.login .install{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid white;
+    padding: 5px;
+    width: 90%;
+    margin: auto;
+    
+}
+.login .install .hide  {
+    display: block;
+}
+.login .install .hide a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 13px;
+}
+.login .install span img{
+    vertical-align: middle;  
+    width: 15px; 
+}
+.login .user{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    
+}
+.login .user .hide{
+    display: block;
+}
+.login .user .hide a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.login .user span img{
+    vertical-align: middle;  
+    width: 25px; 
+}
+
 }
 /*MEDIA QUERY 768PX*/
 @media screen and (min-width: 768px) {
@@ -385,6 +417,14 @@
         width: calc((100% / 6 ) - 20px);
         margin: 10px;
     }
+}
+@media screen and (max-height: 400px){
+    .sidebar .login {
+        display: none;
+        height: 0;
+    }
+
+    
 }
 
 
