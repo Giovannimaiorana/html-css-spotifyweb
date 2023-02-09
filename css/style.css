@@ -22,9 +22,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    overflow-y: hidden;
 }
 .information .information-container{
-    overflow-y: hidden;
+    
     margin-left: 10px;
     margin-top: 10px;
 }
@@ -74,6 +75,9 @@
   vertical-align: middle;
   padding-bottom: 20px;
 }
+.playlistname{
+    overflow-y:scroll ;
+}
 /*** finesidebar*****/
 
 .content{
@@ -113,7 +117,7 @@
 }
 .navigation ul li a{
     text-decoration: none;
-    color: white;
+    color: rgb(123, 126, 130);
 }
 .navigation ul li{
     margin-left: 10px;
@@ -122,13 +126,38 @@
     margin-left: 10px;
     margin-top: 20px;
 }
+.title h2{
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.subtitle{
+    margin-left: 10px;
+    color: rgb(123, 126, 130);
+}
 .album{
     width: calc((100% / 2) - 20px);
     margin-left: 10px;
     margin: 20px auto;
-    height: 200px;
-    background-color: black;
-
+}
+.album img{
+    width: 200px;
+}
+.album h3{
+    text-align: center;
+    color: white;
+    margin: 10px 0 ;
+}
+.album h5{
+    text-align: center;
+    color: rgb(123, 126, 130);
+}
+.row .album-radio img{
+    object-fit: cover;
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 20px;
 }
 /* footer code */
 .container-footer{
