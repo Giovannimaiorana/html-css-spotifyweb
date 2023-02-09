@@ -31,7 +31,6 @@
 }
 .sidebar .login{
     height: 80px;
-    background-color: azure;
 }
 .information .logo .logo-big{
     width: 150px;
@@ -90,7 +89,9 @@
 .information .information-container .logo-small{
     margin-right: 10px;
 }
-
+.information .information-container .icon-text a{
+    margin: auto;
+}
 .information .information-container .icon-text .description{
     display: none;
 }
@@ -103,6 +104,47 @@
     font-size: 13px;
     margin-left: 10px;
 }
+/*sidebar bottom*/
+.install{
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid white;
+}
+.login .install span a img{
+    width: 15px;
+    vertical-align: middle;
+}
+.login .install span a {
+    text-decoration: none;
+    color: rgb(123, 126, 130);
+    font-size: 12px;
+    vertical-align: middle;
+}
+.user{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+}
+.login .user span a img{
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    background-color: rgb(123, 126, 130);
+    object-fit: cover;
+    border-radius: 60%;
+    margin-top: 10px;
+    margin-right: 10px;
+    vertical-align: bottom;
+   
+}
+.login .user span a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+
+}
+
 /*** finesidebar*****/
 
 .content{
@@ -304,6 +346,9 @@
    }
    .information .information-container .logo-big{
     display: block;
+}
+.information .information-container .icon-text a{
+    margin-left: 10px;
 }
 .information .information-container .icon-text .description{
     display: inline-block;
