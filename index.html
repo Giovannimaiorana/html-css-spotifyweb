@@ -43,16 +43,16 @@
                             <h5 class="text-white">PLAYLIST</h5>
 
                             <div class="icon-text">
-                                <a href="#"><i class="fa-solid fa-plus"></i></a>
+                                <a href="#"><i class="fa-solid fa-square-plus"></i></a>
                                 <span class="description"> Crea Playlist </span>
                             </div>
                             <div class="playlistname flex flex-col">
-                                <span class="text-white"> Nome Playlist </span>
-                                <span class="text-white"> Nome Playlist </span>
-                                <span class="text-white"> Nome Playlist </span>
-                                <span class="text-white"> Nome Playlist </span>
-                                <span class="text-white"> Nome Playlist </span>
-                                <span class="text-white"> Nome Playlist </span>
+                                <span class=" playlist-row text-white"> Nome Playlist </span>
+                                <span class=" playlist-row text-white">  Nome Playlist </span>
+                                <span class=" playlist-row text-white"> Nome Playlist </span>
+                                <span class=" playlist-row text-white"> Nome Playlist </span>
+                                <span class=" playlist-row text-white"> Nome Playlist </span>
+                                <span class=" playlist-row text-white"> Nome Playlist </span>
 
                             </div>
                         </div>   
@@ -152,7 +152,7 @@
                         </div>
 
                         <div class="album-radio">
-                            <img src="./img/" alt="release radar">
+                            <img src="./img/einaudi.jpeg" alt="release radar">
                         </div>
                 
                     </section>    
@@ -166,19 +166,46 @@
         <!----------------footer content----------------->  
      <footer>
           <div class="container-footer flex jc-between">
+
              <div class="left-footer flex align-c">
-               <div>photo</div>
-               <div>sinister</div>
-               <div>icons</div>
+
+               <div class="footer-img"> 
+                 <img src="./img/sinister.jpeg" alt="sinister riproduzione"> 
+               </div>
+
+               <div class="footer-left-text flex flex-col">
+                 <h5>Sinister</h5>
+                 <span>Brano</span>
+                 <span>Nome</span>
+               </div>
+
+               <div class="footer-left-icons flex flex-col">
+                  <span><a href="#"><i class="fa-regular fa-heart"></i></a></span>
+                  <span><a href="#"><i class="fa-regular fa-folder"></i></a></span>
+               </div>
              </div>
-             <div class="center-footer flex-col jc-center">
-                <div>photo</div>
-               <div>sinister</div>
+
+             <div class="center-footer flex flex-col jc-center">
+                <div class="player">
+                    <span><a class="btn-pl" href="#"><i class="fa-solid fa-shuffle"></i></a></span>
+                    <span><a class="btn-pl" href="#"><i class="fa-solid fa-backward-step"></i></a></span>
+                    <span><a class="play" href="#"><i class="fa-regular fa-circle-play"></i></a></span>
+                    <span><a class="btn-pl" href="#"><i class="fa-solid fa-forward-step"></i></a></span>
+                    <span><a class="btn-pl" href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a></span>
+
+                </div>
+                <div class="player">
+                  <span class="number-pl">0:25</span>
+                  <div class="time"></div>
+                  <span class="number-pl">4:35</span>
+                </div>
+                
              </div>
              <div class="right-footer flex align-c">
-                <div>photo</div>
-               <div>sinister</div>
-               <div>icons</div>
+                <div class="btn-pl-r"><a href="#"><i class="fa-solid fa-list"></i></a></div>
+               <div class="btn-pl-r"><a href="#"><i class="fa-solid fa-tv"></i></a></div>
+               <div class="btn-pl-r"><a href="#"><i class="fa-solid fa-volume-high"></i></a></div>
+               <div class="volume"></div>
              </div>
 
           </div>

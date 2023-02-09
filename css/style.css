@@ -4,10 +4,10 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-/*debug*/
-
 /*CSS CODE */
+
 /* main code*/
+
 .container-main{
     height: calc(100vh - 100px);
 }
@@ -37,6 +37,9 @@
     width: 150px;
     margin-bottom: 10px;
 }
+.play-container h5{
+    margin-left: 10px;
+}
 
 .information .information-container .icon-text{
     line-height: 40px;
@@ -45,6 +48,7 @@
     text-decoration: none;
     color: white;
     vertical-align: middle;
+    margin-left: 10px;
 }
 .information .information-container .icon-text .description{
     color: white;
@@ -67,6 +71,7 @@
     width: 30px;
     font-size: 30px;
     color: white;
+    margin-left: 10px;
 
 }
 .play-container .icon-text .description{
@@ -82,11 +87,21 @@
 .information .information-container .logo-big{
     display: none;
 }
+.information .information-container .logo-small{
+    margin-right: 10px;
+}
+
 .information .information-container .icon-text .description{
     display: none;
 }
 .information .play-container{
     display: none;
+}
+.play-container .playlistname .playlist-row{
+    color: rgb(123, 126, 130);
+    line-height: 30px;
+    font-size: 13px;
+    margin-left: 10px;
 }
 /*** finesidebar*****/
 
@@ -183,11 +198,67 @@
     bottom: 0;
     left: 0;
 }
+.left-footer{
+    margin-left: 8px;
+}
+.left-footer .footer-img img{
+    width: 40px;
+}
+.container-footer .left-footer .footer-left-text{
+    margin-left: 10px;
+    line-height: 17px;
+}
+.container-footer .left-footer .footer-left-text h5{
+    color: white;
+}
+.container-footer .left-footer .footer-left-text span{
+    color: rgb(123, 126, 130);
+    font-size: 10px;
+}
+.container-footer .left-footer .footer-left-icons a{
+    color: rgb(123, 126, 130);
+    margin-left: 20px;
+    line-height: 20px;
+}
+.center-footer span .play{
+    color: white;
+    margin-right: 15px;
+    font-size: 40px;
+}
+.center-footer span .btn-pl{
+    color: white;
+    margin-right: 15px;
+    font-size: 25px;
 
-
-
-
-
+}
+.player{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.player .time{
+    border: 1px solid white;
+    width: 300px;
+    height: 2px;
+    margin: 10px;
+}
+.number-pl{
+    color: white;
+    font-size: 10px;
+}
+.right-footer{
+    margin-right: 10px;
+}
+.right-footer .btn-pl-r a{
+    color: white;
+    margin: 5px;
+}
+.right-footer .volume{
+    border: 1px solid white;
+    width: 100px;
+    height: 2px;
+    margin: 10px; 
+}
 
 /*COMMON RULES*/
 
@@ -218,14 +289,8 @@
 .text-white{
     color: white;
 }
-
-
-
-
-
-
-
 /*MEDIA QUERY*/
+/*MEDIA QUERY 576PX*/
 @media screen and (min-width: 576px) {
    .sidebar{
     width: 200px;
@@ -255,31 +320,28 @@
     display: flex;
     flex-direction: column;
 }
-
-
-
 }
-
-
-
+/*MEDIA QUERY 768PX*/
 @media screen and (min-width: 768px) {
     .row .album{
-        width: calc((100% / 4 ) - 10px);
+        width: calc((100% / 4 ) - 20px);
+        margin: 10px;
+
     }
-   
+    .row .album-radio{
+        width: calc((100% / 4 ) - 20px);
+        margin: 10px;
+
+    }
 }
-
-
+/*MEDIA QUERY 992PX*/
 @media screen and (min-width: 992px) {
     .row .album{
         width: calc((100% / 6 ) - 20px);
         margin: 10px;
     }
-
 }
-@media screen and (min-width:1200px) {
 
-}
 
 
 
