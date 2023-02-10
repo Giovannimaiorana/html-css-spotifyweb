@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 /*CSS CODE */
-/*************ANIMATION****************/
+/*************HOVER****************/
 .album :hover{
     position: absolute;
     top: 0;
@@ -383,10 +383,12 @@
     background-color: rgb(123, 126, 130);
 }
 .player .time .percentual{
-    width: 30%;
     height: 100%;
     background-color: white;
     position: relative;
+    animation-name: scroll;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
 }
 .player .time .percentual .point-perce{
     width: 17px;
@@ -415,12 +417,13 @@
     height: 10px;
     border-radius: 10px;
     margin: 10px; 
+   
 }
 .right-footer .time .percentual{
-    width: 30%;
+    width: 50%;
     height: 100%;
     background-color: white;
-    position: relative;
+    position: relative;    
 }
 .right-footer .time .percentual .point-perce{
     width: 20px;
@@ -576,10 +579,18 @@
     }
     #cta{
         display: none;
-    }
-    
+    }   
 }
 
+/*********ANIMATION***********/
+@keyframes scroll{
+    0%   { width: 0%;}
+    25%  { width: 30%;}
+    50%  { width: 60%;}
+    75%  { width: 90%;}
+    100% { width: 100%;}
+
+}
 
 
 
