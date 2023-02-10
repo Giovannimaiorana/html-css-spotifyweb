@@ -23,6 +23,34 @@
     border: 1px solid white;
     transition: 0.5s;
 }
+.navigation ul li a:hover{
+    color: white;
+    border-bottom: 1px solid lime;
+}
+.information .information-container .icon-text img:hover{
+    width: 30px;
+    transition: 0.5s;
+}
+.information .information-container .icon-text span a:hover {
+    color: white;
+    width: 30px;
+}
+.play-container .icon-text i:hover {
+    color: white;
+    font-size: 35px;
+    transition: 0.5s;
+}
+.play-container .icon-text .description:hover{
+    color: white;
+}
+.play-container .playlistname .playlist-row a:hover{
+    color: white;
+    font-size: 16px;
+}
+.login .install span img:hover{
+    width: 25px;
+    transition: 0.3s;
+}
 
 
 
@@ -67,11 +95,11 @@
 }
 
 .information .information-container .icon-text{
-    line-height: 40px;
+    line-height: 30px;
 }
 .information .information-container .icon-text a{
     text-decoration: none;
-    color: white;
+    color: rgb(123, 126, 130);
     vertical-align: middle;
     margin-left: 10px;
 }
@@ -95,12 +123,12 @@
     margin-top: 20px;
     width: 30px;
     font-size: 30px;
-    color: white;
+    color: rgb(123, 126, 130);
     margin-left: 10px;
 
 }
 .play-container .icon-text .description{
-  color: white;
+  color: rgb(123, 126, 130);
   padding:5px;
   font-size: 15px;
   vertical-align: middle;
@@ -124,11 +152,12 @@
 .information .play-container{
     display: none;
 }
-.play-container .playlistname .playlist-row{
+.play-container .playlistname .playlist-row a{
     color: rgb(123, 126, 130);
     line-height: 30px;
     font-size: 13px;
     margin-left: 10px;
+    text-decoration: none;
 }
 /*sidebar bottom*/
 .login{
@@ -219,7 +248,7 @@
     color: rgb(123, 126, 130);
 }
 .navigation ul li{
-    margin-left: 10px;
+    margin-left: 20px;
 }
 .title{
     margin-left: 10px;
