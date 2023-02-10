@@ -5,6 +5,19 @@
     font-family: sans-serif;
 }
 /*CSS CODE */
+/*************ANIMATION****************/
+.album :hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.album:hover .overlay-img{
+    display: block;
+}
+.album:hover .overlay-img i{
+    display: block;
+}
+
 
 /* main code*/
 
@@ -135,6 +148,29 @@
 
 /*** finesidebar*****/
 
+/**OVERLAY*/
+.wrapper{
+    position: relative;
+    display: inline-block;
+}
+.overlay-img{
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.wrapper .overlay-img i {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/** FINE OVERLAY*/
 .content{
     width: calc(100% - 50px);
     background-color: rgb(20, 25, 34);
@@ -198,8 +234,10 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
 }
 .album img{
+    position: relative;
     width: 100%;
 }
 .album h3{
@@ -211,7 +249,7 @@
     text-align: center;
     color: rgb(123, 126, 130);
 }
-.row .album-radio img{
+.album-radio img{
     object-fit: cover;
     width: 200px;
     border-radius: 50%;
@@ -268,9 +306,25 @@
 }
 .player .time{
     border: 1px solid white;
-    width: 300px;
-    height: 2px;
+    width: 400px;
+    height: 8px;
+    border-radius: 10px;
     margin: 10px;
+}
+.player .time .percentual{
+    width: 30%;
+    height: 100%;
+    background-color: lime;
+    position: relative;
+}
+.player .time .percentual .point-perce{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: -5px;
 }
 .number-pl{
     color: white;
@@ -283,11 +337,27 @@
     color: white;
     margin: 5px;
 }
-.right-footer .volume{
+.right-footer .time {
     border: 1px solid white;
     width: 100px;
-    height: 2px;
+    height: 10px;
+    border-radius: 10px;
     margin: 10px; 
+}
+.right-footer .time .percentual{
+    width: 30%;
+    height: 100%;
+    background-color: lime;
+    position: relative;
+}
+.right-footer .time .percentual .point-perce{
+   width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: -5px; 
 }
 
 /*COMMON RULES*/
@@ -403,12 +473,10 @@
     .row .album{
         width: calc((100% / 4 ) - 20px);
         margin: 10px;
-
     }
     .row .album-radio{
         width: calc((100% / 4 ) - 20px);
         margin: 10px;
-
     }
 }
 /*MEDIA QUERY 992PX*/
@@ -422,9 +490,7 @@
     .sidebar .login {
         display: none;
         height: 0;
-    }
-
-    
+    }  
 }
 
 
