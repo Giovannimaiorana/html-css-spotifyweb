@@ -25,7 +25,7 @@
 }
 .navigation ul li a:hover{
     color: white;
-    border-bottom: 1px solid lime;
+    border-bottom: 2px solid lime;
 }
 .information .information-container .icon-text img:hover{
     width: 30px;
@@ -50,6 +50,38 @@
 .login .install span img:hover{
     width: 25px;
     transition: 0.3s;
+}
+.left-footer .footer-img:hover  img{
+    width: 60px;
+}
+.container-footer .left-footer .footer-left-text span:hover {
+    color: white;
+    text-decoration: underline;
+}
+.container-footer .left-footer .footer-left-icons a:hover {
+    color: white;
+    font-size: 20px;
+}
+.center-footer span .play:hover {
+    font-size: 45px;
+}
+.center-footer span .btn-pl:hover {
+    font-size: 30px;
+}
+.player .time .percentual:hover .point-perce {
+    display: block;
+}
+.player .time .percentual:hover {
+    background-color: lime;
+}
+.right-footer .time .percentual:hover .point-perce{
+    display: block;
+}
+.right-footer .time .percentual:hover {
+    background-color: lime;
+}
+.right-footer .btn-pl-r a:hover{
+    font-size: 20px;
 }
 
 
@@ -324,6 +356,7 @@
     color: rgb(123, 126, 130);
     margin-left: 20px;
     line-height: 20px;
+    font-size: 17px;
 }
 .center-footer span .play{
     color: white;
@@ -347,11 +380,12 @@
     height: 8px;
     border-radius: 10px;
     margin: 10px;
+    background-color: rgb(123, 126, 130);
 }
 .player .time .percentual{
     width: 30%;
     height: 100%;
-    background-color: lime;
+    background-color: white;
     position: relative;
 }
 .player .time .percentual .point-perce{
@@ -362,6 +396,7 @@
     position: absolute;
     right: 0;
     top: -5px;
+    display: none;
 }
 .number-pl{
     color: white;
@@ -384,17 +419,18 @@
 .right-footer .time .percentual{
     width: 30%;
     height: 100%;
-    background-color: lime;
+    background-color: white;
     position: relative;
 }
 .right-footer .time .percentual .point-perce{
-   width: 17px;
+    width: 20px;
     height: 17px;
     border-radius: 50%;
     background-color: white;
     position: absolute;
     right: 0;
     top: -5px; 
+    display: none;
 }
 
 /*COMMON RULES*/
@@ -503,6 +539,16 @@
     vertical-align: middle;  
     width: 25px; 
 }
+.border{
+    width: 100%;
+    border-left: 3px solid lime;
+    margin: -10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.border .icon-text a img{
+    margin-left: 8px;
+}
 
 }
 /*MEDIA QUERY 768PX*/
@@ -515,6 +561,7 @@
         width: calc((100% / 4 ) - 20px);
         margin: 10px;
     }
+   
 }
 /*MEDIA QUERY 992PX*/
 @media screen and (min-width: 992px) {
@@ -524,10 +571,12 @@
     }
 }
 @media screen and (max-height: 400px){
-    .sidebar .login {
+    .sidebar .information {
+        height: 100%;
+    }
+    #cta{
         display: none;
-        height: 0;
-    }  
+    }
 }
 
 
