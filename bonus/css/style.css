@@ -6,6 +6,7 @@
 }
 /*CSS CODE */
 /*************HOVER****************/
+
 .album :hover{
     position: absolute;
     top: 0;
@@ -83,6 +84,7 @@
 .right-footer .btn-pl-r a:hover{
     font-size: 20px;
 }
+
 
 
 
@@ -252,6 +254,7 @@
     width: calc(100vw - 50px);
     background-color:rgba(0,0,0,0.5);
 }
+   
 #cta .upgrade a{
     text-decoration: none;
     color: rgb(123, 126, 130);
@@ -568,6 +571,8 @@
     display: block;
     display: flex;
 }
+
+
 
 
 }
