@@ -17,6 +17,13 @@
 .album:hover .overlay-img i{
     display: block;
 }
+#cta .upgrade:hover a{
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
 
 
 /* main code*/
@@ -186,10 +193,10 @@
 }
 #cta .upgrade a{
     text-decoration: none;
-    color: white;
+    color: rgb(123, 126, 130);
     background-color: rgba(0, 0, 0, 0);
     border-radius: 20px;
-    border: 1px solid white;
+    border: 1px solid rgb(123, 126, 130);
     padding: 10px;
     
 }
@@ -197,6 +204,7 @@
     position: absolute;
     right: 0;
     top:30px;
+    width: 300px;
 }
 .navigation{
     margin-top: 110px;
